@@ -1,0 +1,76 @@
+<div class="footer">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo">
+                    <a href="../">
+                        <img src="/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="white_text">This blog is our effort to share our learnings with fellow developers and we really appreciate your support by sharing ideas and posting comments. Stay Updated!</div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="col_title">Tags</div>
+                <div class="footer_navigation">
+                    <ul>
+                        {% for post in site.posts %}
+                        {% for tag in post.tags %}
+                        <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <form
+            method="post"
+            action="http://freshbits.us15.list-manage.com/subscribe/post?u=4e84bec2a78c519a9eebbbf41&amp;id=7c2b5185db&c=?"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            >
+            <div class="col-md-4 col-sm-6">
+                <div class="col_title">Email Newsletters</div>
+                <div class="white_text">Receive updates directly into your inbox</div>
+                <div class="form-group email_subscribe">
+                    <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
+
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_4e84bec2a78c519a9eebbbf41_7c2b5185db" tabindex="-1" value="">
+                    </div>
+
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+                </div>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+<div class="copyright_text">&copy; 2017 Freshbits Web Solution. All rights reserved.</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#mc-embedded-subscribe-form').submit(function (e) {
+        e.preventDefault();
+
+        var email = $('#mce-EMAIL').val();
+
+        $.ajax({
+            method: "POST",
+            url: 'https://us15.api.mailchimp.com/3.0/lists/8e85280427/members',
+            headers: {
+                'Authorization': 'Basic QXV0aG9yaXphdGlvbjo5MjVlYzhiZTk2NjAzNTQ5ZTY3MWZmMThkMmNkNTdlNy11czE1',
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+
+            },
+            data: {
+                'email_address':email,
+                'status': 'pending'
+            },
+        }).done(function( data ) {
+            console.log(data.status);
+        });
+    });
+});
+</script>

@@ -1,0 +1,17 @@
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    {% if page.desc %}
+        <meta name="description" content="{{ page.desc }}" />
+    {% else %}
+        <meta name="description" content="I’m a freelance designer and front-end developer with a passion for details and clean interfaces." />
+    {% endif %}
+
+    {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords }}" />
+    {% else %}
+        <meta name="keywords" content="freelance, designer, wirral, web design, development, UI designer, freelance developer, jekyll, grunt, sass, front-end developer, Dave McNally, davemcnally, freelance designer wirral, freelance designer, tileable, tileables, photoshop, patterns, textures" />
+    {% endif %}
