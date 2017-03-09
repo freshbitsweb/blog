@@ -24,38 +24,36 @@ keywords: "Jekyll, theme, SEO, blog, web"
 
 
 # Site settings
-url: http://blog.freshbits.in/
-baseurl: "/blog"
-paginate_path: /page:num
-gems: [jekyll-paginate]
-paginate: 2
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Freshbits Web Solution
+email: freshbits@freshbits.in
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
-# Author settings
-author:
-  name      : Freshbits Web Solution
-  email     : hiren@freshbits.in
-  url       : http://blog.freshbits.in/
-  github    : http://github.com/freshbitsweb
-  twitter   : http://twitter.com/freshbitsweb
-  linkedin  : https://au.linkedin.com/in/freshbitsweb
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+gems:
+  - jekyll-seo-tag
+  - octopress-paginate
+  - jekyll-tagging
+pagination:
+  per_page: 2
+  limit: false
 
-# google analytics
-google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
-
-# comments
-comments: true
-disqus_shortname: "freshbits-blog" #### REPLACE ME, register your account at disqus if you don't have one ####
-
-# subscribe
-subscribe: true
-#### REPLACE SUBSCRIBE.HTML in source/_includes, so you can put your own mail chimps subscribe form in####
-
-#share
-email-share: true
-fb-share: true
-twitter-share: true
-linkedin-share: true
-reddit-share: false
-google-plus-share: true
-tumblr-share: false
-pinterest-share: false
+tag_page_layout: tag_page
+tag_page_dir: tag
