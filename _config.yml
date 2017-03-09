@@ -36,6 +36,8 @@ gems:
   - jekyll-seo-tag
 gems:
   - octopress-paginate
+gems:
+  - jekyll-tagging
 pagination:
   per_page: 1
   limit: false
