@@ -34,8 +34,8 @@ exclude:
   - Gemfile.lock
 gems:
   - jekyll-seo-tag
-gems:
   - octopress-paginate
+  - jekyll-tagging
 pagination:
   per_page: 2
   limit: false
