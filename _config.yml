@@ -24,12 +24,11 @@ keywords: "Jekyll, theme, SEO, blog, web"
 
 
 # Site settings
-url: http://127.0.0.1:4000
-baseurl: "/Jekyll-Iris"
+url: http://blog.freshbits.in/
+baseurl: "/"
 paginate_path: /page:num
 gems: [jekyll-paginate]
 paginate: 2
-categories: [fruit, meat, vegetable, cheese, drink]
 
 # Author settings
 author:
@@ -39,7 +38,6 @@ author:
   github    : http://github.com/freshbitsweb
   twitter   : http://twitter.com/freshbitsweb
   linkedin  : https://au.linkedin.com/in/freshbitsweb
-  avatar    : /assets/images/my_avatar.jpg
 
 # google analytics
 google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
