@@ -50,7 +50,6 @@ exclude:
 gems:
   - jekyll-seo-tag
   - octopress-paginate
-  - jekyll-tagging
 pagination:
   per_page: 2
   limit: false
