@@ -1,0 +1,41 @@
+<footer class="site-footer">
+    <div class="footer">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="{{ site.url }}">
+                            <img src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" alt="Logo" />
+                        </a>
+                    </div>
+                    <div class="white_text">This blog is our effort to share our learnings with fellow developers and we really appreciate your support by sharing ideas and posting comments. Stay Updated!</div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="col_title">Tags</div>
+                    <div class="footer_navigation">
+                        <ul>
+                            {% if post.tags.size > 0 %}
+                              Tag{% if post.tags.size > 1 %}s{% endif %}:
+                              {{ post.tags | sort | join: ", " }}
+                            {% endif %}
+
+                            {% for post in site.posts %}
+                                {% for tag in post.tags %}
+                                    <li class="inline archive_list">
+                                        <a class="tag_list_link" href="{{ site.baseurl }}/tag/{{ tag }}">
+                                            {{ tag }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% include subscribe.html %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="copyright_text">&copy; 2017 Freshbits Web Solution. All rights reserved.</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</footer>

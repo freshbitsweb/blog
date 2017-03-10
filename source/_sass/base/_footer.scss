@@ -1,0 +1,23 @@
+
+.site-footer {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $base-spacing 0;
+  text-align: center;
+  border-top: 1px solid $medium-white-color;
+  color: $medium-gray-color;
+
+.social {
+  .icon{
+    font-size: 1.4em;
+  }
+
+   @include media($max-tablet){
+    .social {
+      .icon{
+        font-size: 1.5em;
+      }
+     }
+   }
+  }
+}

@@ -1,0 +1,63 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
+
+# permalink and highlighter
+permalink : /:year/:title/
+markdown  : kramdown  #define which markdown you wanna to use for your site.
+highlighter : rouge  #define which lighlighter you wanna to use for your code section.
+
+
+# SEO settings
+title: Freshbits Blog
+description: "Tips and Tutorials for the Developers."
+keywords: "Jekyll, theme, SEO, blog, web"
+
+
+# Site settings
+url: http://127.0.0.1:4000
+baseurl: "/Jekyll-Iris"
+paginate_path: /page:num
+gems: [jekyll-paginate]
+paginate: 2
+categories: [fruit, meat, vegetable, cheese, drink]
+
+# Author settings
+author:
+  name      : Freshbits Web Solution
+  email     : hiren@freshbits.in
+  url       : http://127.0.0.1:4000
+  github    : http://github.com/freshbitsweb
+  twitter   : http://twitter.com/freshbitsweb
+  linkedin  : https://au.linkedin.com/in/freshbitsweb
+  avatar    : /assets/images/my_avatar.jpg
+
+# google analytics
+google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
+
+# comments
+comments: true
+disqus_shortname: "freshbits-blog" #### REPLACE ME, register your account at disqus if you don't have one ####
+
+# subscribe
+subscribe: true
+#### REPLACE SUBSCRIBE.HTML in source/_includes, so you can put your own mail chimps subscribe form in####
+
+#share
+email-share: true
+fb-share: true
+twitter-share: true
+linkedin-share: true
+reddit-share: false
+google-plus-share: true
+tumblr-share: false
+pinterest-share: false
