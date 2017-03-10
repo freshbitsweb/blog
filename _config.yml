@@ -25,7 +25,7 @@ keywords: "Jekyll, theme, SEO, blog, web"
 
 # Site settings
 url: http://blog.freshbits.in/
-baseurl: "/"
+baseurl: "/blog"
 paginate_path: /page:num
 gems: [jekyll-paginate]
 paginate: 2
@@ -34,7 +34,7 @@ paginate: 2
 author:
   name      : Freshbits Web Solution
   email     : hiren@freshbits.in
-  url       : http://127.0.0.1:4000
+  url       : http://blog.freshbits.in/
   github    : http://github.com/freshbitsweb
   twitter   : http://twitter.com/freshbitsweb
   linkedin  : https://au.linkedin.com/in/freshbitsweb
