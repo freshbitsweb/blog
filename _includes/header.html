@@ -1,7 +1,7 @@
 <div class="logo_container">
     <div class="wrapper">
         <div class="logo pull-left">
-            <a href="{{ site.baseurl }}/">
+            <a href="{{ site.url }}/">
                 <img src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" alt="Logo">
             </a>
         </div>
@@ -31,7 +31,7 @@
                 </a>
             </div>
             <div class="search_box">
-                <form action="{{ site.baseurl }}/search" method="get">
+                <form action="{{ site.url }}/search" method="get">
                   <input class="form-control" type="text" placeholder="Search" type="text" id="search-box" name="query">
                   <input  class="submit_button" type="submit" value="search">
                 </form>
