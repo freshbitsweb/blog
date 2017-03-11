@@ -32,17 +32,12 @@ layout: default
                     <div class="post_details">
                         <span class="glyphicon glyphicon-comment"></span>
                         <span class="dark_text">
-                            <a
-                                href="{{ site.url }}/{{ page.permalink }}#disqus_thread"
-                            >
-                                Link
-                            </a>
+                            comments
+                            <span class="disqus-comment-count" data-disqus-identifier="{{ page.permalink }}">First article</span>
                         </span>
                     </div>
                 </div>
                 <div class="panel-image">
-                    <span class="disqus-comment-count" data-disqus-identifier="{{ page.permalink }}">First article</span>
-
                     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}" alt="{{ page.alternateText }}">
                 </div>
                 <div class="panel-body">
