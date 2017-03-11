@@ -2,8 +2,8 @@ title: Freshbits Blog
 description: "Tips and Tutorials for the Developers."
 keywords: "Jekyll, theme, SEO, blog, web"
 
-url: "http://www.hirpatel.in"
-baseurl: "/freshbitsblog.github.io"
+url: "http://blog.freshbits.in"
+baseurl: "/"
 paginate_path: /page:num
 gems: [jekyll-paginate]
 paginate: 2
