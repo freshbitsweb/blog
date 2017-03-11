@@ -32,10 +32,25 @@ layout: default
                     <div class="post_details">
                         <span class="glyphicon glyphicon-comment"></span>
                         <span class="dark_text">
-                            comments
-                            <span class="disqus-comment-count" data-disqus-identifier="{{ page.permalink }}">First article</span>
+                            comments :
+                            <span class="disqus-comment-count" data-disqus-identifier="{{ page.permalink }}">
+                                First article
+                            </span>
                         </span>
                     </div>
+                    <br>
+                    <span class="dark_text">
+                        <i class="fa fa-fw fa-tags" aria-hidden="true"></i>Tags:
+                    </span>
+                    <ul class="tags" style="display:inline-flex">
+                        {% for tag in post.tags %}
+                            <li>
+                                <a href="{{ site.url }}/tag/{{ tag }}" class="tag">
+                                    {{ tag }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
                 <div class="panel-image">
                     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}" alt="{{ page.alternateText }}">

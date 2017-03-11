@@ -13,7 +13,7 @@ layout:
             <div class="wrapper">
                 <div class="logo pull-left">
                     <a href="{{ site.url }}">
-                        <img src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" alt="Logo">
+                        <img src="{{ "/assets/images/logo.png" | prepend: site.url }}" alt="Logo">
                     </a>
                 </div>
                 <div class="social_media pull-right">
@@ -91,7 +91,7 @@ layout:
                 "date": "{{ post.date | xml_escape }}",
                 "category": "{{ post.category | xml_escape }}",
                 "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-                "url": "{{ post.url | xml_escape }}",
+                "url": "{{ post.permalink | xml_escape }}",
                 "baseurl": "{{ site.url | xml_escape }}"
             }
             {% unless forloop.last %},{% endunless %}
