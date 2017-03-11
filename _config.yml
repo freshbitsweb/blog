@@ -1,0 +1,38 @@
+title: Freshbits Blog
+description: "Tips and Tutorials for the Developers."
+keywords: "Jekyll, theme, SEO, blog, web"
+
+url: "http://www.hirpatel.in"
+baseurl: "/freshbitsblog.github.io"
+paginate_path: /page:num
+gems: [jekyll-paginate]
+paginate: 2
+
+comments: true
+disqus_shortname: "freshbits-blog"
+subscribe: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+tag_archive:
+  type: liquid
+  path: /tags/
+
+email-share: true
+fb-share: true
+twitter-share: true
+linkedin-share: true
+reddit-share: false
+google-plus-share: true
+tumblr-share: false
+pinterest-share: false
