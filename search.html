@@ -92,7 +92,7 @@ layout:
                 "category": "{{ post.category | xml_escape }}",
                 "content": {{ post.content | strip_html | strip_newlines | jsonify }},
                 "url": "{{ post.url | xml_escape }}",
-                "baseurl": "{{ site.baseurl | xml_escape }}"
+                "baseurl": "{{ site.url | xml_escape }}"
             }
             {% unless forloop.last %},{% endunless %}
             {% endfor %}
