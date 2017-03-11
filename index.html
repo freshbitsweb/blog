@@ -35,7 +35,7 @@ layout: default
                             <div class="post_details">
                                 <span class="glyphicon glyphicon-comment"></span>
                                 <span class="dark_text">
-                                    <a href="{{ site.url }}{{ site.baseurl }}/{{ post.permalink }}#disqus_thread">Link</a>
+                                    <a href="{{ site.url }}/{{ post.permalink }}#disqus_thread">Link</a>
                                 </span>
                             </div>
                             <br>
@@ -53,12 +53,12 @@ layout: default
                             </ul>
                         </div>
                         <div class="panel-image">
-                            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{ post.image }}" alt="{{ post.alternateText}}">
+                            <img src="{{ site.url }}/assets/images/{{ post.image }}" alt="{{ post.alternateText}}">
                         </div>
                         <div class="panel-body homepage-panel-body">
                             {{ post.threelinetext }}...
                             <div class="readmorebutton orange">
-                                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default">
+                                <a href="{{ post.url | prepend: site.url }}" class="btn btn-default">
                                     Read More
                                     <span class="glyphicon glyphicon-arrow-right"></span>
                                 </a>
@@ -70,7 +70,7 @@ layout: default
                 <div class="post_navigation">
 
                     {% if paginator.previous_page_path %}
-                        <a href="{{ paginator.previous_page_path  | prepend: site.baseurl }}" class="btn btn-default btn_prev">
+                        <a href="{{ paginator.previous_page_path  | prepend: site.url }}" class="btn btn-default btn_prev">
                             <span class="glyphicon glyphicon-arrow-left"></span>
                             Prev
                         </a>
@@ -82,7 +82,7 @@ layout: default
                     {% endif %}
 
                     {% if paginator.next_page_path %}
-                        <a href="{{ paginator.next_page_path  | prepend: site.baseurl }}" class="btn btn-default btn_next">
+                        <a href="{{ paginator.next_page_path  | prepend: site.url }}" class="btn btn-default btn_next">
                             Next
                             <span class="glyphicon glyphicon-arrow-right"></span>
                         </a>
