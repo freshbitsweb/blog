@@ -14,14 +14,12 @@
                     <div class="col_title">Tags</div>
                     <div class="footer_navigation">
                         <ul>
-                            {% for post in site.posts %}
-                                {% for tag in post.tags %}
-                                    <li class="inline archive_list">
-                                        <a class="tag_list_link" href="{{ site.url }}/tag/{{ tag }}">
-                                            {{ tag }}
-                                        </a>
-                                    </li>
-                                {% endfor %}
+                            {% for tag in site.tags %}
+                                <li class="inline archive_list">
+                                    <a class="tag_list_link" href="{{ site.url }}/tag/{{ tag[0] | slugify }}">
+                                        {{ tag[0] }}
+                                    </a>
+                                </li>
                             {% endfor %}
                         </ul>
                     </div>

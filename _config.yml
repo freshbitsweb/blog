@@ -24,9 +24,6 @@ exclude:
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
-tag_archive:
-  type: liquid
-  path: /tags/
 
 email-share: true
 fb-share: true

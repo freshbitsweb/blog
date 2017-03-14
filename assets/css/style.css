@@ -528,3 +528,10 @@ img {
     right: 0;
     top: 0;
 }
+.tags a:hover {
+    background-color: #46B192;
+}
+.tags a {
+    text-decoration: none;
+    color: white;
+}
