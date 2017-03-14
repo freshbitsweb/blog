@@ -1,19 +1,24 @@
----
-layout: default
-permalink: '/tag'
----
-<div class="header_2">
-    <div class="header_main">
-        <div class="header_wrapper">
-            <div class="header_text">
-                <div class="left_top_corner"></div>
-                <div class="title_text"><span>{{ page.tag }}</span></div>
-                <div class="right_bottom_corner"></div>
+<!doctype html>
+<html class="no-js" lang="en">
+
+    {% include head.html %}
+
+    <body class="page">
+
+
+    {% include header.html %}
+
+    <div class="header_2">
+        <div class="header_main">
+            <div class="header_wrapper">
+                <div class="header_text">
+                    <div class="left_top_corner"></div>
+                    <div class="title_text"><span>{{ page.tag | capitalize }}</span></div>
+                    <div class="right_bottom_corner"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<ul>
     <div class="content">
         <div class="wrapper">
             <div class="custom_panel">
@@ -44,7 +49,7 @@ permalink: '/tag'
                         <ul class="tags">
                             {% for tag in post.tags %}
                             <li>
-                                <a href="{{ site.url }}/tag/{{ tag }}" class="tag">
+                                <a href="{{ site.url }}/tags/{{ tag }}" class="tag">
                                     {{ tag }}
                                 </a>
                             </li>
@@ -70,5 +75,8 @@ permalink: '/tag'
             </div>
         </div>
     </div>
-</ul>
-{% include scripts.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
+
+    </body>
+</html>
