@@ -1,0 +1,28 @@
+<div class="post_navigation">
+        <a
+            href="{{ paginator.previous_page_path  | prepend: site.url }}"
+            class="
+                btn btn-default btn_prev
+                {% if paginator.previous_page_path %}
+                {% else %}
+                    disabled
+                {% endif %}
+            "
+        >
+            <span class="glyphicon glyphicon-arrow-left"></span>
+            Prev
+        </a>
+        <a
+            href="{{ paginator.next_page_path  | prepend: site.url }}"
+            class="
+                btn btn-default btn_next
+                {% if paginator.next_page_path %}
+                {% else %}
+                    disabled
+                {% endif %}
+            "
+        >
+            Next
+            <span class="glyphicon glyphicon-arrow-right"></span>
+        </a>
+</div>

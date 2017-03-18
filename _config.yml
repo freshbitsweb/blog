@@ -9,7 +9,7 @@ gems: [jekyll-paginate]
 paginate: 2
 
 comments: true
-disqus_shortname: "freshbits-blog"
+disqus_shortname: "freshbitsblog"
 subscribe: true
 
 # Build settings
@@ -20,7 +20,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-
 
 email-share: true
 fb-share: true

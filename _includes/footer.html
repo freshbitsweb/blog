@@ -16,8 +16,16 @@
                         <ul>
                             {% for tag in site.tags %}
                                 <li class="inline archive_list">
-                                    <a class="tag_list_link" href="{{ site.url }}/tags/{{ tag[0] | slugify }}">
-                                        {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+
+                                    <a
+                                        class="
+                                            tag_list_link
+                                            {% if tag[0] == page.tag %}active{% endif %}
+                                        "
+                                        href="{{ site.url }}/tags/{{ tag[0] | slugify }}"
+                                    >
+                                        {{ tag[0] | replace:'-', ' '  | capitalize }}
+                                        ({{ tag | last | size }})
                                     </a>
                                 </li>
                             {% endfor %}
@@ -29,5 +37,5 @@
         </div>
     </div>
 </div>
-<div class="copyright_text">&copy; 2017 Freshbits Web Solution. All rights reserved.</div>
+<div class="copyright_text">&copy; 2017 Freshbits Web Solutions. All rights reserved.</div>
 </footer>

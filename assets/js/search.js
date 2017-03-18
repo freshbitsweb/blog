@@ -41,7 +41,9 @@
                     </ul>
                 </div>
                 <div class="panel-image">
-                    <img src="/assets/images/`+item.image+`" alt="`+item.alternateText+`">
+                    <a href="/` + item.url + `">
+                        <img src="/assets/images/`+item.image+`" alt="`+item.alternateText+`">
+                    </a>
                 </div>
                 <div class="panel-body homepage-panel-body"> ` + item.content.substring(0, 300) + `...
                     <div class="readmorebutton orange">

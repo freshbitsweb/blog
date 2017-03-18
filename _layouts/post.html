@@ -46,7 +46,7 @@ layout: default
                         {% for tag in page.tags %}
                             <li>
                                 <a href="{{ site.url }}/tags/{{ tag }}" class="tag">
-                                    {{ tag }}
+                                    {{ tag | capitalize }}
                                 </a>
                             </li>
                         {% endfor %}

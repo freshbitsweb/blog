@@ -169,6 +169,13 @@ img {
     padding-left: 20px;
     padding-right: 20px
 }
+.panel-heading a {
+    color: black;
+}
+.panel-heading a:hover {
+    color: #edb903;
+    text-decoration: none;
+}
 
 .post_details_head {
     padding-left: 20px;
@@ -313,7 +320,10 @@ img {
     padding-bottom: 60px;
     font-size: 14px
 }
-
+.footer .footer_navigation ul li .active {
+    color: white;
+    background-color: #46b000;
+}
 .footer .logo {
     padding-bottom: 30px
 }
@@ -496,8 +506,8 @@ img {
 }
 .tags li { float: left; }
 .tag {
-    background: #46b000;
-    color: #fff;
+    background: rgba(70, 176, 0, 0.8);
+    color: black;
     display: inline-block;
     height: 26px;
     line-height: 26px;
@@ -521,7 +531,7 @@ img {
 .tag::after {
     background: #fff;
     border-bottom: 13px solid transparent;
-    border-left: 10px solid #46b000;
+    border-left: 10px solid rgba(70, 176, 0, 0.8);
     border-top: 13px solid transparent;
     content: '';
     position: absolute;
@@ -529,7 +539,7 @@ img {
     top: 0;
 }
 .tags a:hover {
-    background-color: #46B192;
+    background-color: #46b000;
 }
 .tags a {
     text-decoration: none;
