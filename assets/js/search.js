@@ -12,6 +12,7 @@
         <li>
             <div class="panel panel-default">
                 <div class="panel-heading">
+                <span class="number-of-search-result">`+(i+1)+`)</span>
                     <a href="/` + item.url + `">
                         <strong>` + item.title + `</strong>
                     </a>

@@ -7,6 +7,11 @@ layout:
         <meta charset="utf-8">
         <title>{{ post.title }}</title>
         {% include head.html %}
+        <style media="screen">
+            .number-of-search-result {
+                font-size: 35px;
+            }
+        </style>
     </head>
     <body>
         <div class="logo_container">
@@ -17,6 +22,14 @@ layout:
                     </a>
                 </div>
                 <div class="social_media pull-right">
+                    <div class="social_media_icon">
+                        <a href="https://freshbits.in" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square fa-stack-2x" style="color:#46b000;"></i>
+                                <i class="fa fa-globe fa-stack-1x" style="color:white;"></i>
+                            </span>
+                        </a>
+                    </div>
                     <div class="social_media_icon">
                         <a href="https://twitter.com/freshbitsweb" target="_blank">
                             <span class="fa-stack fa-lg">
@@ -72,7 +85,7 @@ layout:
             <div class="wrapper">
                 <div class="custom_panel">
                     <div class="panel panel-default">
-                        <ol id="search-results">
+                        <ol id="search-results" style="list-style-type: none;">
                             <h1 style='margin-left:30%;'>No results found</h1>
                         </ol>
                     </div>
