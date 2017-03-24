@@ -6,9 +6,9 @@ date:   2017-03-16 20:08:35 -0200
 categories: jekyll update
 image: 8-helpful-habits-for-programmers.jpg
 alternateText: 8 helpful habits for programmers
-threelinetext: There are many things that help programmers to perform better. Developing complex solutions with great simplicity requires experience. There are no shortcuts. Its all about good habits. They help make that so called "hard work" easy. Lets cover some of those habits very quickly.
 tags: [tips, productivity]
 ---
+There are many things that help programmers to perform better. Developing complex solutions with great simplicity requires experience. There are no shortcuts. Its all about good habits. They help make that so called "hard work" easy. Lets cover some of those habits very quickly.
 
 
 1.  **_Practise makes it useful_**

@@ -24,7 +24,7 @@
                                         "
                                         href="{{ site.url }}/tags/{{ tag[0] | slugify }}"
                                     >
-                                        {{ tag[0] | replace:'-', ' '  | capitalize }}
+                                        {{ tag | first | capitalize }}
                                         ({{ tag | last | size }})
                                     </a>
                                 </li>

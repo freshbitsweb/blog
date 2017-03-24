@@ -63,7 +63,7 @@
                         </a>
                     </div>
                     <div class="panel-body homepage-panel-body">
-                        {{ post.threelinetext }}...
+                        {{ post.content | truncatewords: 43 }}
                         <div class="readmorebutton orange">
                             <a href="{{ site.url }}/{{ post.permalink }}" class="btn btn-default">
                                 Read More

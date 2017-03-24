@@ -1,70 +1,7 @@
 ---
-layout:
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ post.title }}</title>
-        {% include head.html %}
-        <style media="screen">
-            .number-of-search-result {
-                font-size: 35px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="logo_container">
-            <div class="wrapper">
-                <div class="logo pull-left">
-                    <a href="{{ site.url }}">
-                        <img src="{{ "/assets/images/logo.png" | prepend: site.url }}" alt="Logo">
-                    </a>
-                </div>
-                <div class="social_media pull-right">
-                    <div class="social_media_icon">
-                        <a href="https://freshbits.in" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square fa-stack-2x" style="color:#46b000;"></i>
-                                <i class="fa fa-globe fa-stack-1x" style="color:white;"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="social_media_icon">
-                        <a href="https://twitter.com/freshbitsweb" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square fa-stack-2x" style="color:#29A1D3;"></i>
-                                <i class="fa fa-twitter fa-stack-1x" style="color:white;"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="social_media_icon">
-                        <a href="https://www.facebook.com/freshbitsweb/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square fa-stack-2x" style="color:#4F62AF;"></i>
-                                <i class="fa fa-facebook fa-stack-1x" style="color:white;"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="social_media_icon">
-                        <a href="https://www.youtube.com/watch?v=qxPhW9xLJi0" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square fa-stack-2x" style="color:#E73C32;"></i>
-                                <i class="fa fa-youtube-play fa-stack-1x" style="color:white;"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="search_box">
-                        <form action="{{ site.url }}/search" method="get">
-                          <input class="form-control" type="text" placeholder="Search" type="text" id="search-box" name="query">
-                          <input  class="submit_button" type="submit" value="search">
-                        </form>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+
         <div class="header_2">
             <div class="header_main">
                 <div class="header_wrapper">
@@ -77,10 +14,6 @@ layout:
             </div>
         </div>
 
-        <form action="{{ site.url }}/search" method="get">
-          <input type="hidden" id="search-box" name="query">
-          <input type="submit" style="display:none" value="search">
-        </form>
         <div class="content">
             <div class="wrapper">
                 <div class="custom_panel">
@@ -92,7 +25,7 @@ layout:
                 </div>
             </div>
         </div>
-        {% include footer.html %}
+
         <script>
         window.store = {
             {% for post in site.posts %}
@@ -114,5 +47,3 @@ layout:
         </script>
         <script src="{{ "/assets/js/lunr.min.js" | prepend: site.url }}"></script>
         <script src="{{ "/assets/js/search.js" | prepend: site.url }}"></script>
-    </body>
-</html>

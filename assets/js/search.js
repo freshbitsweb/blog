@@ -30,10 +30,10 @@
                         <span class="glyphicon glyphicon-comment"></span>
                         <span class="dark_text">
                             comments:
-                            <span class="disqus-comment-count" data-disqus-identifier="`+item.url+`">0</span>
+                            <span class="disqus-comment-count" data-disqus-identifier="`+item.url+`">o</span>
                         </span>
                     </div>
-                    <br>
+                    <div class="clearfix"></div>
                     <span class="dark_text">
                         <i class="fa fa-fw fa-tags" aria-hidden="true"></i>Tags:
                     </span>
