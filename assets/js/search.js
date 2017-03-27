@@ -8,6 +8,7 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
+
         appendString += `
         <li>
             <div class="panel panel-default">
@@ -60,8 +61,6 @@
       }
 
       searchResults.innerHTML = appendString;
-    } else {
-      searchResults.innerHTML = "<h1 style='margin-left:30%;'>No results found</h1>";
     }
   }
 

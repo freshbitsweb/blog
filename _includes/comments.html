@@ -1,25 +1,23 @@
 {% if site.comments %}
-<!-- Comments Start -->
+    <!-- Comments Start -->
 
-  <div class="comments">
-  <div id="disqus_thread" class="container"></div>
+    <div class="comments">
 
-<script>
-var disqus_config = function () {
-    this.page.url = '{{ page.url | prepend: site.url }}';
-    this.page.identifier = '{{ page.permalink }}';
-};
+        <div id="disqus_thread" class="container"></div>
 
-(function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://'+'{{ site.disqus_shortname }}'+'.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-})();
+        <script>
+            var disqus_config = function () {
+                this.page.url = '{{ page.url | prepend: site.url }}';
+                this.page.identifier = '{{ page.permalink }}';
+            };
 
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-  </div>
-<!-- Comments End -->
-  {% endif %}
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://'+'{{ site.disqus_shortname }}'+'.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </div>
+    <!-- Comments End -->
+{% endif %}
